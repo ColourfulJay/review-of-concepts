@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Game Fan Page</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+  <body>
+    <!-- NOTE: the below comment is how a multiline comment should be written-->
+
+    <!-- 
+            the three semantic tags that must be on every page you create
+            are header, main, and footer.
+
+            Most semantic tags are containers. They need actual HTML elements inside them.
+            Just putting text inside a footer without a p tag or h2 tag is not acceptable.
+            The exception is figcaption
+
+            (Just containers which means its bad pratice to not include some HTML element
+            that goes inside the container.)
+
+            All youre content IS ALWAYS IN THE BODY. It should NOT be anywhere else
+        -->
+    <header>
+      <h1>Valorant Fan Page</h1>
+      <nav>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="gamemodes">Gamemodes</a></li>
+      </nav>
+
+      <br />
+      <!-- 
+                When youre doing anything with naming, lowercase, and hyphens between
+                the words.   
+            -->
+    </header>
+    <main>
+      <!-- we create sections for areas of related content-->
+      <section>
+        <!-- 
+            Inside semantic tags, we can use divs to further group content.
+            (Containers inside containers (container-ception))
+        -->
+        <div>
+          <!-- Never add a span to wrap aroud all the content of an element. -->
+          <h2>What is a Video Game?</h2>
+          <p>
+            <span id="definition">"Video games</span>, also known as computer
+            games, are electronic games that involves interaction with a user
+            interface or input device such as a joystick, controller, keyboard,
+            or motion sensing device to generate visual feedback."
+            <a href="https://en.wikipedia.org/wiki/Video_game" target="_blank">
+              -(Wikipedia)
+            </a>
+          </p>
+        </div>
+        <figure>
+          <figcaption>
+            the image below is an image of two examples of how video games can
+            be played. either on a
+            <span class="game-options"> PC with a keyboard and mouse, </span> or
+            on a <span class="game-options">controller like Xbox</span>.
+          </figcaption>
+          <img
+            style="width: 75%"
+            src="images/videogames-ex.webp"
+            alt="an image of headphones, a keyboard, mouse on a mouse pad, 
+                and an Xbox controller.There is a green light shining onto it." />
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <!-- 
+                this is the correct way to put content inside a container.
+                This is the correct way to use text decoration tags.
+            -->
+      <p><small>&#169; Lily Telfer</small></p>
+    </footer>
+  </body>
+</html>
+<!-- If these two tags arent touching/together, its wrong.-->
